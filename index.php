@@ -1,13 +1,6 @@
 <?php
 
-// CONSTANTS
-define('NAME', 'Yoshi');
 
-// VARIABLES
-// $name = 'Yoshi';
-$age = 30;
-
-// $name = 'Mario';
 
 ?>
 
@@ -19,10 +12,7 @@ $age = 30;
 </head>
 
 <body>
-  <h1>User Profile Page</h1>
 
-  <div><?php echo NAME; ?></div>
-  <div><?php echo $age; ?></div>
 </body>
 
 </html>
