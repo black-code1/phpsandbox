@@ -1,6 +1,11 @@
 <?php
 
+// include('ninjas.php');
+// require('ninjas.php');
+require 'ninjas.php';
+include 'ninjas.php';
 
+echo 'end of php';
 
 ?>
 
@@ -12,7 +17,9 @@
 </head>
 
 <body>
-
+  <?php include('content.php') ?>
+  <?php include('content.php') ?>
+  <?php include('content.php') ?>
 </body>
 
 </html>
