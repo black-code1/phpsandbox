@@ -42,7 +42,7 @@ $ninjasTwo['peach'] = 'pink';
 // echo count($ninjasOne);
 
 $ninjasThree = array_merge($ninjasOne, $ninjasTwo);
-print_r($ninjasThree);
+// print_r($ninjasThree);
 
 
 ?>
