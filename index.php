@@ -1,7 +1,13 @@
 <?php
 
+// MySQLi (i: improve) or PDO (PHP DATA OBJECT)
 
-
+// connect to database
+$conn = mysqli_connect('localhost', 'legrand', 'admin123', 'ninja_pizza');
+// check connection
+if (!$conn) {
+  echo 'Connection error: ' . mysqli_connect_error();
+}
 ?>
 
 <!DOCTYPE html>
