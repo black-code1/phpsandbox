@@ -7,12 +7,8 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>PHP Tutorials</title>
-</head>
+<?php include('templates/header.php') ?>
 
-<body>
-
-</body>
+<?php include('templates/footer.php') ?>
 
 </html>
