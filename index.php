@@ -38,7 +38,7 @@ mysqli_close($conn)
 
   <div class="row">
 
-    <?php foreach ($pizzas as $pizza) { ?>
+    <?php foreach ($pizzas as $pizza) : ?>
 
       <div class="col s6 md3">
 
@@ -50,11 +50,11 @@ mysqli_close($conn)
 
             <ul>
 
-              <?php foreach (explode(',', $pizza['ingredients']) as $ing) { ?>
+              <?php foreach (explode(',', $pizza['ingredients']) as $ing) : ?>
 
                 <li><?php echo htmlspecialchars($ing) ?></li>
 
-              <?php } ?>
+              <?php endforeach; ?>
 
             </ul>
 
@@ -70,7 +70,7 @@ mysqli_close($conn)
 
       </div>
 
-    <?php } ?>
+    <?php endforeach; ?>
 
   </div>
 
