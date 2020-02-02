@@ -48,7 +48,15 @@ mysqli_close($conn)
 
             <h6><?php echo htmlspecialchars($pizza['title']); ?></h6>
 
-            <div><?php echo htmlspecialchars($pizza['ingredients']); ?></div>
+            <ul>
+
+              <?php foreach (explode(',', $pizza['ingredients']) as $ing) { ?>
+
+                <li><?php echo htmlspecialchars($ing) ?></li>
+
+              <?php } ?>
+
+            </ul>
 
           </div>
 
