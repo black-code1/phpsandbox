@@ -39,6 +39,8 @@ mysqli_close($conn)
 
         <div class="card z-depth-0">
 
+          <img src="img/pizza.svg" class="pizza" alt="">
+
           <div class="card-content center">
 
             <h6><?php echo htmlspecialchars($pizza['title']); ?></h6>
