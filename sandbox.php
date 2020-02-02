@@ -1,21 +1,19 @@
 <?php
 
-// ternary operators
+// sessions
 
-$score = 50;
+if (isset($_POST['submit'])) {
 
-// if ($score > 40) {
+  session_start();
 
-//   echo 'high score!';
-// } else {
+  $_SESSION['name'] = $_POST['name'];
 
-//   echo 'low score :(';
-// }
+  header('Location: index.php');
+}
 
-// $val = $score > 40 ? 'high score' : 'low score :(';
-// echo $score > 40 ? 'high score' : 'low score :(';
+// $_SESSION, $_COOKIE
 
-// echo $val;
+
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +28,12 @@ $score = 50;
 
 <body>
 
-  <p><?php echo $score > 40 ? 'high score' : 'low score :('; ?></p>
+  <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+
+    <input type="text" name="name">
+    <input type="submit" name="submit" value="submit">
+
+  </form>
 
 </body>
 
